@@ -32,9 +32,9 @@ class FeedbackMailer implements MailerContract
      */
     public function send($body)
     {
-        $view    = config('turnkey.feedback.view');
+        $view = config('turnkey.feedback.view');
         $subject = config('turnkey.feedback.subject');
-        $email   = config('turnkey.feedback.email');
+        $email = config('turnkey.feedback.email');
 
         $this->mailer->send(
             $view, ['body' => $body],

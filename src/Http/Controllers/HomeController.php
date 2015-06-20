@@ -64,7 +64,7 @@ class HomeController extends BaseController
 
         $credentials = [
             $identifier => $this->auth->user()->$identifier,
-            'password'  => $request->get('password'),
+            'password' => $request->get('password'),
         ];
 
         if ($this->auth->validate($credentials)) {
